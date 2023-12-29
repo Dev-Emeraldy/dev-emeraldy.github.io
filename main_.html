@@ -25,7 +25,16 @@
 </html>
 
 <style>
+    .html::-webkit-scrollbar {
+      display: none;
+    }
 
+/* Hide scrollbar for IE, Edge and Firefox */
+    .html {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+    
     .padding {
         padding-bottom: 20px;
     }
@@ -73,6 +82,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
+        
     }
     body {
         background: rgb(48, 48, 48);
